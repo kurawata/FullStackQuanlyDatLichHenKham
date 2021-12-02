@@ -10,6 +10,9 @@ let initWebRoutes = (app) => {
 
     router.post('/post-crud', homeController.postCRUD);
     router.get('/show-crud', homeController.showCRUD);
+    router.get('/edit-crud', homeController.geteditCRUD);
+    router.post('/put-crud', homeController.putCRUD);
+    router.get('/delete-crud', homeController.deleteCRUD);
 
     // router.get("/",(req,res) => {       
     //     return res.send("Hello world with Kurawata")
